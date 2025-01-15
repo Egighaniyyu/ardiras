@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- splide js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
+    <!-- phospor icon-->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <section id="navbar" class="container mx-auto">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between mx-auto py-4">
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="assets/images/logo.webp" class="h-8" alt="Logo" />
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html" class="block py-2 px-3" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="all-product.html" class="block py-2 px-3">Produk</a>
+              </li>
+              <li>
+                <a href="index.html#testimonials" class="block py-2 px-3">Testimonials</a>
+              </li>
+              <li>
+                <a href="#contact-form" class="block py-2 px-3">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- end navbar -->
+
+    <!-- title -->
+    <section id="title">
+      <div class="bg-dark-pink">
+        <div class="mx-auto container">
+          <div class="flex flex-row justify-between items-center py-3">
+            <a href="index.html" class="flex items-center gap-2 text-gray-500 font-sans text-sm">
+              <i class="ph-bold ph-caret-left text-2xl text-white"></i>
+            </a>
+            <div class="flex items-center gap-2 text-gray-500 font-sans text-sm">
+              <img src="assets/images/facial_wash_white.webp" alt="icon" class="h-16 w-auto" />
+              <span class="font-sans text-xl font-semibold text-white">Facial Wash</span>
+            </div>
+            <i class="ph-bold ph-caret-left text-2xl text-transparent"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product -->
+    <section id="product">
+      <div class="container mx-auto py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <img src="assets/images/product9_detail4.webp" alt="img" class="w-full h-full object-cover" />
+          <img src="assets/images/product9_detail2.webp" alt="img" class="w-full h-full object-cover" />
+          <img src="assets/images/product9_detail1.webp" alt="img" class="w-full h-full object-cover" />
+          <img src="assets/images/product9_detail3.webp" alt="img" class="w-full h-full object-cover" />
+        </div>
+        <div class="flex flex-row justify-between items-center bg-light-pink py-3 px-5">
+          <h3 class="text-white text-lg font-medium font-sans">Rp. 45.000</h3>
+          <button type="button" class="text-white font-sans font-medium rounded-full text-sm px-4 py-2.5 bg-[#26D367] hover:bg-green-400 flex flex-row items-center gap-2">
+            <i class="ph ph-whatsapp-logo text-white text-xl"></i>
+            <span>Pesan Sekarang</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end product -->
+
+    <!-- contact form -->
+    <section id="contact-form">
+      <div class="bg-slate-100 py-10">
+        <div class="container mx-auto">
+          <h3 class="text-center font-sans text-xl md:text-3xl font-semibold mb-10">Kontak kami</h3>
+          <div class="flex flex-col md:flex-row gap-5">
+            <div class="flex flex-col gap-5 w-full">
+              <div class="flex flex-col gap-3">
+                <label for="name" class="font-sans text-sm">Name</label>
+                <input type="text" id="name" class="border border-gray-200 rounded-lg p-3" />
+              </div>
+              <div class="flex flex-col gap-3">
+                <label for="no_whatsapp" class="font-sans text-sm">No. Whatsapp</label>
+                <input type="text" id="no_whatsapp" class="border border-gray-200 rounded-lg p-3" />
+              </div>
+              <div class="flex flex-col gap-3">
+                <label for="alamat" class="font-sans text-sm">Alamat</label>
+                <textarea id="alamat" class="border border-gray-200 rounded-lg p-3"></textarea>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 w-full">
+              <label for="keluhan" class="font-sans text-sm">Keluhan</label>
+              <textarea id="keluhan" class="border border-gray-200 rounded-lg p-3 self-stretch h-full"></textarea>
+            </div>
+          </div>
+          <button type="button" class="mx-auto text-white font-serif font-medium rounded-full text-lg px-16 py-2.5 mt-10 bg-[#26D367] hover:bg-green-400 flex flex-row items-center gap-2">
+            <i class="ph ph-whatsapp-logo text-white text-xl"></i>
+            <span>Whatsapp</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end contact form -->
+
+    <!-- footer -->
+    <footer class="bg-dark-pink text-white py-10">
+      <div class="container mx-auto">
+        <div class="flex flex-row gap-5 justify-between items-center">
+          <img src="assets/images/logo_white.webp" alt="logo" class="h-6 md:h-11 w-auto" />
+          <div class="flex flex-row gap-5">
+            <a href="#" class="text-white"><i class="ph-fill ph-globe-simple text-2xl md:text-4xl"></i></a>
+            <a href="#" class="text-white"><i class="ph-fill ph-facebook-logo text-2xl md:text-4xl"></i></a>
+            <a href="#" class="text-white"><i class="ph-fill ph-instagram-logo text-2xl md:text-4xl"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- copyright -->
+    <div class="flex bg-white font-sans text-[10px] md:text-base text-gray-500 text-center items-center justify-center py-3 md:py-6">Copyright © 2024 Ardira’s. All Rights Reserved.</div>
+    <!-- end copyright -->
+
+    <!-- Floating Botton -->
+    <div class="flex flex-col gap-4" style="position: fixed; bottom: 20px; right: 20px">
+      <a data-tooltip-target="tooltip-whatsapp" data-tooltip-placement="left" href="#" class="flex p-3 rounded-full w-fit bg-green-400"><i class="ph ph-whatsapp-logo text-2xl text-white"></i></a>
+      <div id="tooltip-whatsapp" role="tooltip" class="absolute z-10 invisible flex px-3 py-2 text-sm font-medium text-dark-primary w-fit bg-gray-100 rounded-lg shadow-sm opacity-0 tooltip text-nowrap">
+        24/7 Chat 👩‍⚕️🚑
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+    </div>
+    <!-- End Floating -->
+
+    <!-- flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

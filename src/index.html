@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- splide js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
+    <!-- phospor icon-->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <section id="navbar" class="container mx-auto">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between mx-auto py-4">
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="assets/images/logo.webp" class="h-8" alt="Logo" />
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html" class="block py-2 px-3" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="all-product.html" class="block py-2 px-3">Produk</a>
+              </li>
+              <li>
+                <a href="index.html#testimonials" class="block py-2 px-3">Testimonials</a>
+              </li>
+              <li>
+                <a href="#contact-form" class="block py-2 px-3">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- end navbar -->
+
+    <!-- Jumbotron -->
+    <section id="Jumbotron">
+      <div class="bg-[url('assets/images/banner_home_mobile.webp')] md:bg-[url('assets/images/banner_home_desktop.webp')] h-[606px] sm:h-[740px] md:h-[500px] lg:h-[540px] 2xl:h-[700px] bg-cover object-center sm:py-[80px] md:py-[60px] lg:py-[70px] mt-8 md:mt-0 relative">
+        <div class="container mx-auto">
+          <div class="absolute bottom-14 right-6 md:bottom-auto md:right-auto items-end md:items-start md:relative flex gap-2 flex-col w-3/4 lg:w-1/2">
+            <h3 class="text-white font-semibold text-2xl md:text-4xl font-sans">Selamat datang di</h3>
+            <img src="assets/images/logo_white.webp" alt="logo" class="h-10 md:h-20 w-fit" />
+            <h5 class="text-white text-base md:text-2xl font-sans mt-10 text-right md:text-left">Solusi perawatan kulit alami yang memadukan keajaiban botani untuk kulit yang lebih sehat dan bersinar.</h5>
+          </div>
+          <button type="button" class="block md:hidden text-white font-sans font-medium rounded-full text-lg px-5 py-2.5 absolute left-0 right-0 w-10/12 bg-[#26D367] hover:bg-green-400 flex flex-row items-center gap-4 justify-center" style="margin-inline: auto; bottom: -20px"><i class="ph ph-whatsapp-logo text-white text-xl"></i><span>Jadwalkan Sekarang</span></button>
+          <button type="button" class="hidden md:block text-white font-sans font-medium rounded-full text-lg px-16 py-2.5 mt-10 bg-[#26D367] hover:bg-green-400 flex flex-row items-center gap-4"><i class="ph ph-whatsapp-logo text-white text-xl me-3"></i><span>Jadwalkan Sekarang</span></button>
+        </div>
+      </div>
+    </section>
+    <!-- End Jumbotron -->
+
+    <!-- serum -->
+    <section id="serum">
+      <div class="bg-[url('assets/images/banner_serum_mobile.webp')] md:bg-[url('assets/images/banner_serum_desktop.webp')] bg-cover bg-top">
+        <div class="container mx-auto">
+          <div class="flex flex-row justify-end items-start md:items-center h-[468px] pt-20 md:pt-0">
+            <div class="w-full md:w-1/2">
+              <h5 class="text-white text-sm md:text-2xl font-sans text-center md:text-right">Diperkaya dengan bahan-bahan alami terpilih yang memberikan nutrisi esensial untuk kulit Anda, memadukan kekuatan tumbuhan pilihan untuk merawat kulit Anda dengan lembut dan efektif.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end serum -->
+
+    <!-- category -->
+    <section id="category">
+      <div class="container mx-auto py-12">
+        <h3 class="text-center font-sans text-xl md:text-3xl text-gray-800 font-semibold mb-10">Kategori</h3>
+        <div class="flex flex-col md:flex-row gap-7">
+          <div id="accordion-collapse-brightening" data-accordion="collapse" class="w-full md:w-1/2">
+            <h2 id="accordion-collapse-heading-brightening">
+              <button type="button" class="flex items-center justify-between w-full py-3 ps-5 pe-9 font-medium text-white bg-light-pink gap-3 rounded-2xl" data-accordion-target="#accordion-collapse-body-brightening" aria-expanded="false" aria-controls="accordion-collapse-body-brightening">
+                <div class="flex flex-row gap-3 items-center">
+                  <img src="assets/images/brightening.webp" alt="icon" class="h-10" />
+                  <span>Brightening</span>
+                </div>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-brightening" class="hidden" aria-labelledby="accordion-collapse-heading-brightening">
+              <div class="flex flex-col">
+                <a href="detail-product9.html" class="px-9 py-2 bg-white hover:bg-pink-100 border-b border-b-dark-pink">
+                  <div class="flex flex-row gap-4 items-center">
+                    <img src="assets/images/brightening_facial_wash.webp" alt="icon" class="w-10 h-10" />
+                    <span class="font-sans font-semibold text-dark-pink">Facial Wash</span>
+                  </div>
+                </a>
+                <a href="detail-product7.html" class="px-9 py-2 bg-white hover:bg-pink-100 border-b border-b-dark-pink">
+                  <div class="flex flex-row gap-4 items-center">
+                    <img src="assets/images/brightening_cream_gel.webp" alt="icon" class="w-10 h-10" />
+                    <span class="font-sans font-semibold text-dark-pink">Cream</span>
+                  </div>
+                </a>
+                <a href="detail-product6.html" class="px-9 py-2 bg-white hover:bg-pink-100 border-b border-b-dark-pink">
+                  <div class="flex flex-row gap-4 items-center">
+                    <img src="assets/images/brightening_serum.webp" alt="icon" class="w-10 h-10" />
+                    <span class="font-sans font-semibold text-dark-pink">Serum</span>
+                  </div>
+                </a>
+                <a href="detail-product8.html" class="px-9 py-2 bg-white hover:bg-pink-100 border-b border-b-dark-pink">
+                  <div class="flex flex-row gap-4 items-center">
+                    <img src="assets/images/brightening_sunscreen.webp" alt="icon" class="w-10 h-10" />
+                    <span class="font-sans font-semibold text-dark-pink">Sunscreen</span>
+                  </div>
+                </a>
+                <a href="detail-product10.html" class="px-9 py-2 bg-white hover:bg-pink-100 border-b border-b-dark-pink">
+                  <div class="flex flex-row gap-4 items-center">
+                    <img src="assets/images/brightening_toner.webp" alt="icon" class="w-10 h-10" />
+                    <span class="font-sans font-semibold text-dark-pink">Toner</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion-collapse-acne" data-accordion="collapse" class="w-full md:w-1/2">
+            <h2 id="accordion-collapse-heading-acne">
+              <button type="button" class="flex items-center justify-between w-full py-3 ps-5 pe-9 font-medium text-white bg-light-blue gap-3 rounded-2xl" data-accordion-target="#accordion-collapse-body-acne" aria-expanded="false" aria-controls="accordion-collapse-body-acne">
+                <div class="flex flex-row gap-3 items-center">
+                  <img src="assets/images/acne.webp" alt="icon" class="h-10" />
+                  <span>Acne</span>
+                </div>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body-acne" class="hidden" aria-labelledby="accordion-collapse-heading-acne">
+              <div class="flex flex-col">
+                <a href="detail-product2.html" class="px-9 py-2 bg-white hover:bg-blue-100 border-b border-b-dark-blue">
+                  <div class="flex flex-row gap-4 items-center">
+                    <img src="assets/images/acne_facial_wash.webp" alt="icon" class="w-10 h-10" />
+                    <span class="font-sans font-semibold text-dark-blue">Facial Wash</span>
+                  </div>
+                </a>
+                <a href="detail-product3.html" class="px-9 py-2 bg-white hover:bg-blue-100 border-b border-b-dark-blue">
+                  <div class="flex flex-row gap-4 items-center">
+                    <img src="assets/images/acne_cream_gel.webp" alt="icon" class="w-10 h-10" />
+                    <span class="font-sans font-semibold text-dark-blue">Cream</span>
+                  </div>
+                </a>
+                <a href="detail-product1.html" class="px-9 py-2 bg-white hover:bg-blue-100 border-b border-b-dark-blue">
+                  <div class="flex flex-row gap-4 items-center">
+                    <img src="assets/images/acne_serum.webp" alt="icon" class="w-10 h-10" />
+                    <span class="font-sans font-semibold text-dark-blue">Serum</span>
+                  </div>
+                </a>
+                <a href="detail-product4.html" class="px-9 py-2 bg-white hover:bg-blue-100 border-b border-b-dark-blue">
+                  <div class="flex flex-row gap-4 items-center">
+                    <img src="assets/images/acne_sunscreen.webp" alt="icon" class="w-10 h-10" />
+                    <span class="font-sans font-semibold text-dark-blue">Sunscreen</span>
+                  </div>
+                </a>
+                <a href="detail-product5.html" class="px-9 py-2 bg-white hover:bg-blue-100 border-b border-b-dark-blue">
+                  <div class="flex flex-row gap-4 items-center">
+                    <img src="assets/images/acne_toner.webp" alt="icon" class="w-10 h-10" />
+                    <span class="font-sans font-semibold text-dark-blue">Toner</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end category -->
+
+    <!-- product -->
+    <section id="product">
+      <div class="container mx-auto pb-10">
+        <h3 class="text-center font-sans text-xl md:text-3xl text-gray-800 font-semibold mb-10">Produk</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <a href="detail-product1.html" class="flex flex-col gap-3 w-full">
+            <div class="relative w-full">
+              <img src="assets/images/product1.webp" alt="product" class="w-auto" />
+              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100"><i class="ph ph-basket p-0 m-0"></i></button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm md:text-xl font-sans">Serum Expert Acne</h5>
+              <div class="flex flex-row justify-between items-center">
+                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-product2.html" class="flex flex-col gap-3 w-full">
+            <div class="relative w-full">
+              <img src="assets/images/product2.webp" alt="product" class="w-auto" />
+              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100"><i class="ph ph-basket p-0 m-0"></i></button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm md:text-xl font-sans">Facial Wash Exclusive Acne</h5>
+              <div class="flex flex-row justify-between items-center">
+                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-product3.html" class="flex flex-col gap-3 w-full">
+            <div class="relative w-full">
+              <img src="assets/images/product3.webp" alt="product" class="w-auto" />
+              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100"><i class="ph ph-basket p-0 m-0"></i></button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm md:text-xl font-sans">Cream Gel Eksklusif Acne</h5>
+              <div class="flex flex-row justify-between items-center">
+                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-product4.html" class="flex flex-col gap-3 w-full">
+            <div class="relative w-full">
+              <img src="assets/images/product4.webp" alt="product" class="w-auto" />
+              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100"><i class="ph ph-basket p-0 m-0"></i></button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm md:text-xl font-sans">Sunscreen Eksklusif Acne</h5>
+              <div class="flex flex-row justify-between items-center">
+                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a href="all-product.html" class="block mx-auto font-serif font-medium rounded-full text-base px-16 py-2.5 mt-10 border border-gray-500 hover:bg-light-pink hover:border-light-pink hover:text-white duration-100 flex-row items-center gap-4 w-fit"><span>Lihat Semua</span></a>
+      </div>
+    </section>
+
+    <!-- problem -->
+    <section id="problem">
+      <div class="bg-[url('assets/images/bg_problem.webp')] bg-cover pt-10">
+        <div class="container mx-auto">
+          <h3 class="text-center font-sans text-xl md:text-3xl text-dark-pink font-semibold mb-10">Apakah kulit kamu mengalami masalah seperti ini ?</h3>
+          <img src="assets/images/problem.webp" alt="image" />
+        </div>
+      </div>
+    </section>
+    <!-- end problem -->
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="py-10 bg-[url('assets/images/bg_testimonials.webp')] bg-cover bg-center">
+        <div class="container mx-auto overflow-x-hidden">
+          <h2 class="text-white text-center font-sans text-xl md:text-3xl font-semibold">Testimonials</h2>
+          <div id="splide-testimonials" class="splide mt-14" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide px-4 flex">
+                  <div class="flex w-[268px] pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative border-2 border-solid border-dark-green self-stretch justify-between">
+                    <p class="text-white text-center font-serif text-sm"> "Saya tidak bisa percaya betapa cepatnya rangkaian Glutathione Cream dari Ardira’s telah mengubah kulit saya! Bintik gelapdan tekstur yang tidak rata memudar, dan warna kulit saya terlihat lebih cerahdan bersinar. Sangat direkomendasikan!"</p>
+                    <div class="flex flex-col gap-1 items-center">
+                      <p class="text-white text-center font-serif text-lg font-bold">Sophia R.</p>
+                    </div>
+                    <img src="assets/images/testimonials1.svg" alt="testimonials" class="absolute -top-8 w-[66px] h-[66px]" />
+                  </div>
+                </li>
+                <li class="splide__slide px-4 flex">
+                  <div class="flex w-[268px] pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative border-2 border-solid border-dark-green self-stretch justify-between">
+                    <p class="text-white text-center font-serif text-sm">"Saya telah berjuang dengan jerawat selama bertahun-tahun, tetapi Acne Lotion dari Ardira's telah menjadi penolong. Kulitsaya lebih jernih, lebih halus, dan lebih percaya diri dari sebelumnya. Terimakasih!"</p>
+                    <div class="flex flex-col gap-1 items-center">
+                      <p class="text-white text-center font-serif text-lg font-bold">Stephanie Stranko</p>
+                    </div>
+                    <img src="assets/images/testimonials2.svg" alt="testimonials" class="absolute -top-8 w-[66px] h-[66px]" />
+                  </div>
+                </li>
+                <li class="splide__slide px-4 flex">
+                  <div class="flex w-[268px] pt-14 pb-8 px-8 flex-col items-center gap-6 rounded-[32px] mt-8 relative border-2 border-solid border-dark-green self-stretch justify-between">
+                    <p class="text-white text-center font-serif text-sm"> "Sebagai seseorang dengan kulit sensitif, saya senang menemukan Cream Gel dari Ardira’s. Ini lembut namun efektif, membuat kulit saya terasa segar dan segar setiap kali menggunakannya."</p>
+                    <div class="flex flex-col gap-1 items-center">
+                      <p class="text-white text-center font-serif text-lg font-bold">Maria G</p>
+                    </div>
+                    <img src="assets/images/testimonials3.svg" alt="testimonials" class="absolute -top-8 w-[66px] h-[66px]" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonial -->
+
+    <!-- contact form -->
+    <section id="contact-form">
+      <div class="bg-slate-100 py-10">
+        <div class="container mx-auto">
+          <h3 class="text-center font-sans text-xl md:text-3xl font-semibold mb-10">Kontak kami</h3>
+          <div class="flex flex-col md:flex-row gap-5">
+            <div class="flex flex-col gap-5 w-full">
+              <div class="flex flex-col gap-3">
+                <label for="name" class="font-sans text-sm">Name</label>
+                <input type="text" id="name" class="border border-gray-200 rounded-lg p-3" />
+              </div>
+              <div class="flex flex-col gap-3">
+                <label for="no_whatsapp" class="font-sans text-sm">No. Whatsapp</label>
+                <input type="text" id="no_whatsapp" class="border border-gray-200 rounded-lg p-3" />
+              </div>
+              <div class="flex flex-col gap-3">
+                <label for="alamat" class="font-sans text-sm">Alamat</label>
+                <textarea id="alamat" class="border border-gray-200 rounded-lg p-3"></textarea>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 w-full">
+              <label for="keluhan" class="font-sans text-sm">Keluhan</label>
+              <textarea id="keluhan" class="border border-gray-200 rounded-lg p-3 self-stretch h-full"></textarea>
+            </div>
+          </div>
+          <button type="button" class="mx-auto text-white font-serif font-medium rounded-full text-lg px-16 py-2.5 mt-10 bg-[#26D367] hover:bg-green-400 flex flex-row items-center gap-2">
+            <i class="ph ph-whatsapp-logo text-white text-xl"></i>
+            <span>Whatsapp</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end contact form -->
+
+    <!-- footer -->
+    <footer class="bg-dark-pink text-white py-10">
+      <div class="container mx-auto">
+        <div class="flex flex-row gap-5 justify-between items-center">
+          <img src="assets/images/logo_white.webp" alt="logo" class="h-6 md:h-11 w-auto" />
+          <div class="flex flex-row gap-5">
+            <a href="#" class="text-white"><i class="ph-fill ph-globe-simple text-2xl md:text-4xl"></i></a>
+            <a href="#" class="text-white"><i class="ph-fill ph-facebook-logo text-2xl md:text-4xl"></i></a>
+            <a href="#" class="text-white"><i class="ph-fill ph-instagram-logo text-2xl md:text-4xl"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- copyright -->
+    <div class="flex bg-white font-sans text-[10px] md:text-base text-gray-500 text-center items-center justify-center py-3 md:py-6">Copyright © 2024 Ardira’s. All Rights Reserved.</div>
+    <!-- end copyright -->
+
+    <!-- Floating Botton -->
+    <div class="flex flex-col gap-4" style="position: fixed; bottom: 20px; right: 20px">
+      <a data-tooltip-target="tooltip-whatsapp" data-tooltip-placement="left" href="#" class="flex p-3 rounded-full w-fit bg-green-400"><i class="ph ph-whatsapp-logo text-2xl text-white"></i></a>
+      <div id="tooltip-whatsapp" role="tooltip" class="absolute z-10 invisible flex px-3 py-2 text-sm font-medium text-dark-primary w-fit bg-gray-100 rounded-lg shadow-sm opacity-0 tooltip text-nowrap">
+        24/7 Chat 👩‍⚕️🚑
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+    </div>
+    <!-- End Floating -->
+
+    <!-- flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <!-- splide js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      var splideTestimonials = new Splide("#splide-testimonials", {
+        type: "loop",
+        focus: "center",
+        autoWidth: true,
+        //responsive
+        breakpoints: {
+          1280: {
+            perPage: 3,
+          },
+        },
+        arrows: true,
+        pagination: true,
+      });
+
+      splideTestimonials.mount();
+    </script>
+  </body>
+</html>
