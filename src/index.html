@@ -24,12 +24,17 @@
           <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="assets/images/logo.webp" class="h-8" alt="Logo" />
           </a>
-          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-          </button>
+          <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart">
+              <i class="ph ph-shopping-cart text-2xl"></i>
+            </button>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+              </svg>
+            </button>
+          </div>
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
@@ -41,9 +46,6 @@
               <li>
                 <a href="index.html#testimonials" class="block py-2 px-3">Testimonials</a>
               </li>
-              <li>
-                <a href="#contact-form" class="block py-2 px-3">Contact</a>
-              </li>
             </ul>
           </div>
         </div>
@@ -53,211 +55,330 @@
 
     <!-- Jumbotron -->
     <section id="Jumbotron">
-      <div class="bg-[url('assets/images/banner_home_mobile.webp')] md:bg-[url('assets/images/banner_home_desktop.webp')] h-[606px] sm:h-[740px] md:h-[500px] lg:h-[540px] 2xl:h-[700px] bg-cover object-center sm:py-[80px] md:py-[60px] lg:py-[70px] mt-8 md:mt-0 relative">
-        <div class="container mx-auto">
-          <div class="absolute bottom-14 right-6 md:bottom-auto md:right-auto items-end md:items-start md:relative flex gap-2 flex-col w-3/4 lg:w-1/2">
-            <h3 class="text-white font-semibold text-2xl md:text-4xl font-sans">Selamat datang di</h3>
-            <img src="assets/images/logo_white.webp" alt="logo" class="h-10 md:h-20 w-fit" />
-            <h5 class="text-white text-base md:text-2xl font-sans mt-10 text-right md:text-left">Solusi perawatan kulit alami yang memadukan keajaiban botani untuk kulit yang lebih sehat dan bersinar.</h5>
-          </div>
-          <button type="button" class="block md:hidden text-white font-sans font-medium rounded-full text-lg px-5 py-2.5 absolute left-0 right-0 w-10/12 bg-[#26D367] hover:bg-green-400 flex flex-row items-center gap-4 justify-center" style="margin-inline: auto; bottom: -20px"><i class="ph ph-whatsapp-logo text-white text-xl"></i><span>Jadwalkan Sekarang</span></button>
-          <button type="button" class="hidden md:block text-white font-sans font-medium rounded-full text-lg px-16 py-2.5 mt-10 bg-[#26D367] hover:bg-green-400 flex flex-row items-center gap-4"><i class="ph ph-whatsapp-logo text-white text-xl me-3"></i><span>Jadwalkan Sekarang</span></button>
+      <div id="splide-jumbotron" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <a href="#">
+                <img alt="homepage-slider-1" src="assets/images/banner1_desktop.webp" class="hidden lg:block w-full h-fit cursor-pointer" />
+                <img alt="homepage-slider-1" src="assets/images/banner1_mobile.webp" class="block lg:hidden w-full h-fit cursor-pointer" />
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="#">
+                <img alt="homepage-slider-1" src="assets/images/banner1_desktop.webp" class="hidden lg:block w-full h-fit cursor-pointer" />
+                <img alt="homepage-slider-1" src="assets/images/banner1_mobile.webp" class="block lg:hidden w-full h-fit cursor-pointer" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <!-- End Jumbotron -->
 
-    <!-- serum -->
-    <section id="serum">
-      <div class="bg-[url('assets/images/banner_serum_mobile.webp')] md:bg-[url('assets/images/banner_serum_desktop.webp')] bg-cover bg-top">
-        <div class="container mx-auto">
-          <div class="flex flex-row justify-end items-start md:items-center h-[468px] pt-20 md:pt-0">
-            <div class="w-full md:w-1/2">
-              <h5 class="text-white text-sm md:text-2xl font-sans text-center md:text-right">Diperkaya dengan bahan-bahan alami terpilih yang memberikan nutrisi esensial untuk kulit Anda, memadukan kekuatan tumbuhan pilihan untuk merawat kulit Anda dengan lembut dan efektif.</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end serum -->
-
-    <!-- category -->
-    <section id="category">
-      <div class="container mx-auto py-12">
-        <h3 class="text-center font-sans text-xl md:text-3xl text-gray-800 font-semibold mb-10">Kategori</h3>
-        <div class="flex flex-col md:flex-row gap-7">
-          <div id="accordion-collapse-brightening" data-accordion="collapse" class="w-full md:w-1/2">
-            <h2 id="accordion-collapse-heading-brightening">
-              <button type="button" class="flex items-center justify-between w-full py-3 ps-5 pe-9 font-medium text-white bg-light-pink gap-3 rounded-2xl" data-accordion-target="#accordion-collapse-body-brightening" aria-expanded="false" aria-controls="accordion-collapse-body-brightening">
-                <div class="flex flex-row gap-3 items-center">
-                  <img src="assets/images/brightening.webp" alt="icon" class="h-10" />
-                  <span>Brightening</span>
-                </div>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
-                </svg>
-              </button>
-            </h2>
-            <div id="accordion-collapse-body-brightening" class="hidden" aria-labelledby="accordion-collapse-heading-brightening">
-              <div class="flex flex-col">
-                <a href="detail-product9.html" class="px-9 py-2 bg-white hover:bg-pink-100 border-b border-b-dark-pink">
-                  <div class="flex flex-row gap-4 items-center">
-                    <img src="assets/images/brightening_facial_wash.webp" alt="icon" class="w-10 h-10" />
-                    <span class="font-sans font-semibold text-dark-pink">Facial Wash</span>
-                  </div>
-                </a>
-                <a href="detail-product7.html" class="px-9 py-2 bg-white hover:bg-pink-100 border-b border-b-dark-pink">
-                  <div class="flex flex-row gap-4 items-center">
-                    <img src="assets/images/brightening_cream_gel.webp" alt="icon" class="w-10 h-10" />
-                    <span class="font-sans font-semibold text-dark-pink">Cream</span>
-                  </div>
-                </a>
-                <a href="detail-product6.html" class="px-9 py-2 bg-white hover:bg-pink-100 border-b border-b-dark-pink">
-                  <div class="flex flex-row gap-4 items-center">
-                    <img src="assets/images/brightening_serum.webp" alt="icon" class="w-10 h-10" />
-                    <span class="font-sans font-semibold text-dark-pink">Serum</span>
-                  </div>
-                </a>
-                <a href="detail-product8.html" class="px-9 py-2 bg-white hover:bg-pink-100 border-b border-b-dark-pink">
-                  <div class="flex flex-row gap-4 items-center">
-                    <img src="assets/images/brightening_sunscreen.webp" alt="icon" class="w-10 h-10" />
-                    <span class="font-sans font-semibold text-dark-pink">Sunscreen</span>
-                  </div>
-                </a>
-                <a href="detail-product10.html" class="px-9 py-2 bg-white hover:bg-pink-100 border-b border-b-dark-pink">
-                  <div class="flex flex-row gap-4 items-center">
-                    <img src="assets/images/brightening_toner.webp" alt="icon" class="w-10 h-10" />
-                    <span class="font-sans font-semibold text-dark-pink">Toner</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div id="accordion-collapse-acne" data-accordion="collapse" class="w-full md:w-1/2">
-            <h2 id="accordion-collapse-heading-acne">
-              <button type="button" class="flex items-center justify-between w-full py-3 ps-5 pe-9 font-medium text-white bg-light-blue gap-3 rounded-2xl" data-accordion-target="#accordion-collapse-body-acne" aria-expanded="false" aria-controls="accordion-collapse-body-acne">
-                <div class="flex flex-row gap-3 items-center">
-                  <img src="assets/images/acne.webp" alt="icon" class="h-10" />
-                  <span>Acne</span>
-                </div>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
-                </svg>
-              </button>
-            </h2>
-            <div id="accordion-collapse-body-acne" class="hidden" aria-labelledby="accordion-collapse-heading-acne">
-              <div class="flex flex-col">
-                <a href="detail-product2.html" class="px-9 py-2 bg-white hover:bg-blue-100 border-b border-b-dark-blue">
-                  <div class="flex flex-row gap-4 items-center">
-                    <img src="assets/images/acne_facial_wash.webp" alt="icon" class="w-10 h-10" />
-                    <span class="font-sans font-semibold text-dark-blue">Facial Wash</span>
-                  </div>
-                </a>
-                <a href="detail-product3.html" class="px-9 py-2 bg-white hover:bg-blue-100 border-b border-b-dark-blue">
-                  <div class="flex flex-row gap-4 items-center">
-                    <img src="assets/images/acne_cream_gel.webp" alt="icon" class="w-10 h-10" />
-                    <span class="font-sans font-semibold text-dark-blue">Cream</span>
-                  </div>
-                </a>
-                <a href="detail-product1.html" class="px-9 py-2 bg-white hover:bg-blue-100 border-b border-b-dark-blue">
-                  <div class="flex flex-row gap-4 items-center">
-                    <img src="assets/images/acne_serum.webp" alt="icon" class="w-10 h-10" />
-                    <span class="font-sans font-semibold text-dark-blue">Serum</span>
-                  </div>
-                </a>
-                <a href="detail-product4.html" class="px-9 py-2 bg-white hover:bg-blue-100 border-b border-b-dark-blue">
-                  <div class="flex flex-row gap-4 items-center">
-                    <img src="assets/images/acne_sunscreen.webp" alt="icon" class="w-10 h-10" />
-                    <span class="font-sans font-semibold text-dark-blue">Sunscreen</span>
-                  </div>
-                </a>
-                <a href="detail-product5.html" class="px-9 py-2 bg-white hover:bg-blue-100 border-b border-b-dark-blue">
-                  <div class="flex flex-row gap-4 items-center">
-                    <img src="assets/images/acne_toner.webp" alt="icon" class="w-10 h-10" />
-                    <span class="font-sans font-semibold text-dark-blue">Toner</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end category -->
-
     <!-- product -->
     <section id="product">
-      <div class="container mx-auto pb-10">
+      <div class="container mx-auto py-10">
         <h3 class="text-center font-sans text-xl md:text-3xl text-gray-800 font-semibold mb-10">Produk</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
-          <a href="detail-product1.html" class="flex flex-col gap-3 w-full">
+          <div class="flex flex-col gap-3 w-full">
             <div class="relative w-full">
               <img src="assets/images/product1.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100"><i class="ph ph-basket p-0 m-0"></i></button>
             </div>
-            <div class="flex flex-col gap-2">
+            <a href="detail-product1.html" class="flex flex-col gap-3">
               <h5 class="text-sm md:text-xl font-sans">Serum Expert Acne</h5>
-              <div class="flex flex-row justify-between items-center">
+              <div class="flex flex-col gap-1">
                 <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
                 <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
               </div>
-            </div>
-          </a>
-          <a href="detail-product2.html" class="flex flex-col gap-3 w-full">
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 w-full">
             <div class="relative w-full">
               <img src="assets/images/product2.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100"><i class="ph ph-basket p-0 m-0"></i></button>
+              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
             </div>
-            <div class="flex flex-col gap-2">
+            <a href="detail-product2.html" class="flex flex-col gap-2">
               <h5 class="text-sm md:text-xl font-sans">Facial Wash Exclusive Acne</h5>
               <div class="flex flex-row justify-between items-center">
                 <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
                 <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
               </div>
-            </div>
-          </a>
-          <a href="detail-product3.html" class="flex flex-col gap-3 w-full">
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 w-full">
             <div class="relative w-full">
               <img src="assets/images/product3.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100"><i class="ph ph-basket p-0 m-0"></i></button>
+              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
             </div>
-            <div class="flex flex-col gap-2">
+            <a href="detail-product3.html" class="flex flex-col gap-2">
               <h5 class="text-sm md:text-xl font-sans">Cream Gel Eksklusif Acne</h5>
               <div class="flex flex-row justify-between items-center">
                 <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
                 <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
               </div>
-            </div>
-          </a>
-          <a href="detail-product4.html" class="flex flex-col gap-3 w-full">
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 w-full">
             <div class="relative w-full">
               <img src="assets/images/product4.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100"><i class="ph ph-basket p-0 m-0"></i></button>
+              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
             </div>
-            <div class="flex flex-col gap-2">
+            <a href="detail-product4.html" class="flex flex-col gap-2">
               <h5 class="text-sm md:text-xl font-sans">Sunscreen Eksklusif Acne</h5>
               <div class="flex flex-row justify-between items-center">
                 <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
                 <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-        <a href="all-product.html" class="block mx-auto font-serif font-medium rounded-full text-base px-16 py-2.5 mt-10 border border-gray-500 hover:bg-light-pink hover:border-light-pink hover:text-white duration-100 flex-row items-center gap-4 w-fit"><span>Lihat Semua</span></a>
+        <a href="all-product.html" class="block mx-auto font-serif font-medium rounded-full text-base px-16 py-2.5 mt-10 border text-light-pink border-light-pink hover:bg-light-pink hover:border-light-pink hover:text-white duration-100 flex-row items-center gap-4 w-fit"><span>Lihat Semua</span></a>
       </div>
     </section>
+    <!-- end product -->
 
-    <!-- problem -->
-    <section id="problem">
-      <div class="bg-[url('assets/images/bg_problem.webp')] bg-cover pt-10">
+    <!-- kategori -->
+    <section id="kategori">
+      <div class="bg-light-pink py-10">
         <div class="container mx-auto">
-          <h3 class="text-center font-sans text-xl md:text-3xl text-dark-pink font-semibold mb-10">Apakah kulit kamu mengalami masalah seperti ini ?</h3>
-          <img src="assets/images/problem.webp" alt="image" />
+          <h3 class="text-center font-sans text-xl md:text-3xl text-white font-semibold mb-10">Kategori</h3>
+          <div id="splide-category" class="splide mt-14" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <a href="all-product.html" class="px-4 flex flex-col gap-4 items-center">
+                    <img src="assets/images/thumb_cat1.webp" alt="img" class="aspect-square w-[268px]" />
+                    <p class="text-white font-sans text-base text-center">Acne</p>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="all-product.html" class="px-4 flex flex-col gap-4 items-center">
+                    <img src="assets/images/thumb-cat2.webp" alt="img" class="aspect-square w-[268px]" />
+                    <p class="text-white font-sans text-base text-center">Brightening</p>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="all-product.html" class="px-4 flex flex-col gap-4 items-center">
+                    <img src="assets/images/thumb_cat3.webp" alt="img" class="aspect-square w-[268px]" />
+                    <p class="text-white font-sans text-base text-center">Bundling</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- end problem -->
+    <!-- end kategori -->
+
+    <!-- rekomendasi product -->
+    <section id="recommended-product">
+      <div class="container mx-auto py-10">
+        <h3 class="text-center font-sans text-xl md:text-3xl text-gray-800 font-semibold mb-10">Rekomendasi Produk</h3>
+
+        <div class="mb-4 p-2 w-full md:w-fit rounded-full bg-[#FCD0D2] mx-auto overflow-x-scroll">
+          <ul class="flex flex-row text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-light-pink rounded-full bg-white rounded-full" data-tabs-inactive-classes="text-[#F9999F] rounded-full bg-transparent rounded-full hover:text-light-pink" role="tablist">
+            <li class="me-2" role="presentation">
+              <button class="inline-block px-4 py-2 !rounded-full text-nowrap" id="facial-wash-styled-tab" data-tabs-target="#styled-facial-wash" type="button" role="tab" aria-controls="facial-wash" aria-selected="false">Facial Wash</button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button class="inline-block px-4 py-2 !rounded-full text-nowrap" id="cream-styled-tab" data-tabs-target="#styled-cream" type="button" role="tab" aria-controls="cream" aria-selected="false">Cream</button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button class="inline-block px-4 py-2 !rounded-full text-nowrap" id="serum-styled-tab" data-tabs-target="#styled-serum" type="button" role="tab" aria-controls="serum" aria-selected="false">Serum</button>
+            </li>
+            <li role="presentation">
+              <button class="inline-block px-4 py-2 !rounded-full text-nowrap" id="sunscreen-styled-tab" data-tabs-target="#styled-sunscreen" type="button" role="tab" aria-controls="sunscreen" aria-selected="false">Sunscreen</button>
+            </li>
+            <li role="presentation">
+              <button class="inline-block px-4 py-2 !rounded-full text-nowrap" id="toner-styled-tab" data-tabs-target="#styled-toner" type="button" role="tab" aria-controls="toner" aria-selected="false">Toner</button>
+            </li>
+          </ul>
+        </div>
+        <div id="default-styled-tab-content">
+          <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-facial-wash" role="tabpanel" aria-labelledby="facial-wash-tab">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+              <div class="flex flex-col gap-3 w-full">
+                <div class="relative w-full">
+                  <img src="assets/images/product9.webp" alt="product" class="w-auto" />
+                  <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+                </div>
+                <a href="detail-product9.html" class="flex flex-col gap-2">
+                  <h5 class="text-sm md:text-xl font-sans line-clamp-2">Facial Wash Exclusive Brightening</h5>
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                    <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+                  </div>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 w-full">
+                <div class="relative w-full">
+                  <img src="assets/images/product2.webp" alt="product" class="w-auto" />
+                  <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+                </div>
+                <a href="detail-product2.html" class="flex flex-col gap-2">
+                  <h5 class="text-sm md:text-xl font-sans line-clamp-2">Facial Wash Exclusive Acne</h5>
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                    <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-cream" role="tabpanel" aria-labelledby="cream-tab">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+              <div class="flex flex-col gap-3 w-full">
+                <div class="relative w-full">
+                  <img src="assets/images/product7.webp" alt="product" class="w-auto" />
+                  <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+                </div>
+                <a href="detail-product7.html" class="flex flex-col gap-2">
+                  <h5 class="text-sm md:text-xl font-sans line-clamp-2">Eksklusif Cream Brightening</h5>
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                    <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+                  </div>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 w-full">
+                <div class="relative w-full">
+                  <img src="assets/images/product3.webp" alt="product" class="w-auto" />
+                  <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+                </div>
+                <a href="detail-product3.html" class="flex flex-col gap-2">
+                  <h5 class="text-sm md:text-xl font-sans line-clamp-2">Cream Gel Eksklusif Acne</h5>
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                    <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-serum" role="tabpanel" aria-labelledby="serum-tab">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+              <div class="flex flex-col gap-3 w-full">
+                <div class="relative w-full">
+                  <img src="assets/images/product6.webp" alt="product" class="w-auto" />
+                  <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+                </div>
+                <a href="detail-product6.html" class="flex flex-col gap-2">
+                  <h5 class="text-sm md:text-xl font-sans line-clamp-2">Serum Eksklusif Brightening</h5>
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                    <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+                  </div>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 w-full">
+                <div class="relative w-full">
+                  <img src="assets/images/product1.webp" alt="product" class="w-auto" />
+                  <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+                </div>
+                <a href="detail-product1.html" class="flex flex-col gap-2">
+                  <h5 class="text-sm md:text-xl font-sans line-clamp-2">Serum Expert Acne</h5>
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                    <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-sunscreen" role="tabpanel" aria-labelledby="sunscreen-tab">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+              <div class="flex flex-col gap-3 w-full">
+                <div class="relative w-full">
+                  <img src="assets/images/product8.webp" alt="product" class="w-auto" />
+                  <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+                </div>
+                <a href="detail-product8.html" class="flex flex-col gap-2">
+                  <h5 class="text-sm md:text-xl font-sans line-clamp-2">Sunscreen Eksklusif Brightening</h5>
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                    <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+                  </div>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 w-full">
+                <div class="relative w-full">
+                  <img src="assets/images/product4.webp" alt="product" class="w-auto" />
+                  <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+                </div>
+                <a href="detail-product4.html" class="flex flex-col gap-2">
+                  <h5 class="text-sm md:text-xl font-sans line-clamp-2">Sunscreen Eksklusif Acne</h5>
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                    <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-toner" role="tabpanel" aria-labelledby="toner-tab">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+              <div class="flex flex-col gap-3 w-full">
+                <div class="relative w-full">
+                  <img src="assets/images/product5.webp" alt="product" class="w-auto" />
+                  <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+                </div>
+                <a href="detail-product5.html" class="flex flex-col gap-2">
+                  <h5 class="text-sm md:text-xl font-sans line-clamp-2">Toner Eksklusif Acne</h5>
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                    <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+                  </div>
+                </a>
+              </div>
+              <div class="flex flex-col gap-3 w-full">
+                <div class="relative w-full">
+                  <img src="assets/images/product10.webp" alt="product" class="w-auto" />
+                  <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+                </div>
+                <a href="detail-product10.html" class="flex flex-col gap-2">
+                  <h5 class="text-sm md:text-xl font-sans line-clamp-2">Eksklusif Face Toner</h5>
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
+                    <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="all-product.html" class="block mx-auto font-serif font-medium rounded-full text-base px-16 py-2.5 mt-10 border text-light-pink border-light-pink hover:bg-light-pink hover:border-light-pink hover:text-white duration-100 flex-row items-center gap-4 w-fit"><span>Lihat Semua</span></a>
+      </div>
+    </section>
+    <!-- end recommended product -->
+
+    <!-- benefit -->
+    <section id="benefit">
+      <div class="bg-light-pink py-10">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+            <div class="flex px-4 py-5 rounded-xl bg-[#E05E65] flex-col gap-4 items-center">
+              <img src="assets/images/icon_shipping.webp" alt="benefit" class="w-14" />
+              <h5 class="text-white font-sans text-base text-center">Shipping Around Indonesia</h5>
+            </div>
+            <div class="flex px-4 py-5 rounded-xl bg-[#E05E65] flex-col gap-4 items-center">
+              <img src="assets/images/icon_exclusive.webp" alt="benefit" class="w-14" />
+              <h5 class="text-white font-sans text-base text-center">Exclusive Offers and Bundling</h5>
+            </div>
+            <div class="flex px-4 py-5 rounded-xl bg-[#E05E65] flex-col gap-4 items-center">
+              <img src="assets/images/icon_tailored.webp" alt="benefit" class="w-14" />
+              <h5 class="text-white font-sans text-base text-center">Tailored for All Skin Types</h5>
+            </div>
+            <div class="flex px-4 py-5 rounded-xl bg-[#E05E65] flex-col gap-4 items-center">
+              <img src="assets/images/icon_brightening_acne.webp" alt="benefit" class="w-14" />
+              <h5 class="text-white font-sans text-base text-center">Brightening and Acne Focus</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonials -->
     <section id="testimonials">
@@ -302,49 +423,37 @@
     </section>
     <!-- end testimonial -->
 
-    <!-- contact form -->
-    <section id="contact-form">
-      <div class="bg-slate-100 py-10">
-        <div class="container mx-auto">
-          <h3 class="text-center font-sans text-xl md:text-3xl font-semibold mb-10">Kontak kami</h3>
-          <div class="flex flex-col md:flex-row gap-5">
-            <div class="flex flex-col gap-5 w-full">
-              <div class="flex flex-col gap-3">
-                <label for="name" class="font-sans text-sm">Name</label>
-                <input type="text" id="name" class="border border-gray-200 rounded-lg p-3" />
-              </div>
-              <div class="flex flex-col gap-3">
-                <label for="no_whatsapp" class="font-sans text-sm">No. Whatsapp</label>
-                <input type="text" id="no_whatsapp" class="border border-gray-200 rounded-lg p-3" />
-              </div>
-              <div class="flex flex-col gap-3">
-                <label for="alamat" class="font-sans text-sm">Alamat</label>
-                <textarea id="alamat" class="border border-gray-200 rounded-lg p-3"></textarea>
-              </div>
-            </div>
-            <div class="flex flex-col gap-3 w-full">
-              <label for="keluhan" class="font-sans text-sm">Keluhan</label>
-              <textarea id="keluhan" class="border border-gray-200 rounded-lg p-3 self-stretch h-full"></textarea>
-            </div>
-          </div>
-          <button type="button" class="mx-auto text-white font-serif font-medium rounded-full text-lg px-16 py-2.5 mt-10 bg-[#26D367] hover:bg-green-400 flex flex-row items-center gap-2">
-            <i class="ph ph-whatsapp-logo text-white text-xl"></i>
-            <span>Whatsapp</span>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- end contact form -->
-
     <!-- footer -->
     <footer class="bg-dark-pink text-white py-10">
       <div class="container mx-auto">
-        <div class="flex flex-row gap-5 justify-between items-center">
+        <div class="flex flex-col md:flex-row gap-5 justify-between items-center">
           <img src="assets/images/logo_white.webp" alt="logo" class="h-6 md:h-11 w-auto" />
-          <div class="flex flex-row gap-5">
-            <a href="#" class="text-white"><i class="ph-fill ph-globe-simple text-2xl md:text-4xl"></i></a>
-            <a href="#" class="text-white"><i class="ph-fill ph-facebook-logo text-2xl md:text-4xl"></i></a>
-            <a href="#" class="text-white"><i class="ph-fill ph-instagram-logo text-2xl md:text-4xl"></i></a>
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="flex flex-col gap-4">
+              <h5 class="text-white font-sans text-base">Contact Us:</h5>
+              <div class="flex flex-col gap-2">
+                <div class="flex flow-row gap-2 items-center">
+                  <i class="ph-fill ph-map-pin text-white"></i>
+                  <p class="text-white font-sans">Jakarta, Indonesia</p>
+                </div>
+                <div class="flex flow-row gap-2 items-center">
+                  <i class="ph-fill ph-clock text-white"></i>
+                  <p class="text-white font-sans">Hours: 09.00 - 21.00, Senin - Minggu</p>
+                </div>
+                <div class="flex flow-row gap-2 items-center">
+                  <i class="ph-fill ph-envelope text-white"></i>
+                  <p class="text-white font-sans">support@ardiras.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h5 class="text-white font-sans text-base">Follow Us:</h5>
+              <div class="flex flex-row gap-5">
+                <a href="#" class="text-white"><i class="ph-fill ph-globe-simple text-2xl md:text-4xl"></i></a>
+                <a href="#" class="text-white"><i class="ph-fill ph-facebook-logo text-2xl md:text-4xl"></i></a>
+                <a href="#" class="text-white"><i class="ph-fill ph-instagram-logo text-2xl md:text-4xl"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -365,12 +474,93 @@
     </div>
     <!-- End Floating -->
 
+    <!-- cart -->
+    <div id="cart" class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-right-label">
+      <h5 id="drawer-right-label" class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">Checkout</h5>
+      <button type="button" data-drawer-hide="cart" aria-controls="cart" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </button>
+      <div class="relative h-full self-stretch">
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-row gap-4">
+            <img src="assets/images/product1.webp" alt="img" class="w-24 h-24 object-cover" />
+            <div class="flex flex-col gap-4 w-full">
+              <div class="flex flex-col gap-3">
+                <h5 class="font-sans font-medium">Serum Expert Acne</h5>
+                <div class="flex flex-col gap-2 mt-3">
+                  <p class="font-sans font-semibold text-xs">Rp. 45.000</p>
+                  <p class="font-sans text-xs text-gray-500 decoration line-through">Rp. 50.000</p>
+                </div>
+                <div class="flex flex-row gap-2 items-center">
+                  <button type="button" class="rounded-lg p-2 h-8 focus:ring-gray-100 focus:ring-2 focus:outline-none">
+                    <i class="ph ph-trash"></i>
+                  </button>
+                  <form class="max-w-xs w-fit mt-3">
+                    <div class="relative flex items-center max-w-[8rem]">
+                      <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="bg-[#FEF0F1] rounded-s-lg p-3 h-11 focus:ring-gray-100 focus:ring-2 focus:outline-none">
+                        <svg class="w-3 h-3 text-light-pink" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
+                        </svg>
+                      </button>
+                      <input type="text" id="quantity-input" data-input-counter aria-describedby="helper-text-explanation" class="bg-[#FEF0F1] h-11 text-center text-gray-900 text-sm block w-full py-2.5 border-none" placeholder="0" required />
+                      <button type="button" id="increment-button" data-input-counter-increment="quantity-input" class="bg-[#FEF0F1] rounded-e-lg p-3 h-11 focus:ring-gray-100 focus:ring-2 focus:outline-none">
+                        <svg class="w-3 h-3 text-light-pink" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fixed w-80 bottom-0 right-0 bg-white dark:bg-gray-800">
+          <div class="flex flex-row justify-between items-center mt-3 p-4 mb-3">
+            <p class="font-sans text-xs text-gray-500">Subtotal</p>
+            <p class="font-sans font-semibold text-xs">Rp. 45.000</p>
+          </div>
+          <div class="flex p-5 bg-white shadow-[0px_-4px_32px_0px_rgba(246,103,111,0.12)]">
+            <a href="account-information.html" class="flex bg-light-pink hover:bg-[#E05E65] text-white font-medium text-sm py-3 rounded-lg justify-center w-full">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end cart -->
+
     <!-- flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
     <!-- splide js -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
+      var splideJumbotron = new Splide("#splide-jumbotron", {
+        type: "loop",
+        focus: "center",
+        cover: true,
+        arrows: true,
+        pagination: true,
+      });
+
+      splideJumbotron.mount();
+
+      var splideCategory = new Splide("#splide-category", {
+        type: "loop",
+        focus: "center",
+        autoWidth: true,
+        perPage: 3,
+        arrows: true,
+        pagination: true,
+        classes: {
+          pagination: "mt-4 flex justify-center gap-2",
+        },
+      });
+
+      splideCategory.mount();
+
       var splideTestimonials = new Splide("#splide-testimonials", {
         type: "loop",
         focus: "center",

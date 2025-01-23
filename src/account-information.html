@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- splide js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
+    <!-- phospor icon-->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <section id="navbar" class="container mx-auto">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between mx-auto py-4">
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="assets/images/logo.webp" class="h-8" alt="Logo" />
+          </a>
+          <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart">
+              <i class="ph ph-shopping-cart text-2xl"></i>
+            </button>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html" class="block py-2 px-3" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="all-product.html" class="block py-2 px-3">Produk</a>
+              </li>
+              <li>
+                <a href="index.html#testimonials" class="block py-2 px-3">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- end navbar -->
+
+    <!-- product -->
+    <section id="product">
+      <div class="container mx-auto py-10">
+        <div class="flex flex-col-reverse md:flex-row gap-6">
+          <div class="w-full md:w-7/12">
+            <div class="flex flex-col gap-4">
+              <h3 class="font-sans font-semibold text-2xl">Informasi Akun</h3>
+              <p class="font-sans font-medium text-sm text-gray-500">
+                Sudah punya akun? <span><a href="#" class="font-sans font-medium text-light-pink">Login</a></span>
+              </p>
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <label for="email" class="font-sans font-medium text-sm">Email</label>
+                  <input type="email" id="email" class="border border-gray-200 rounded-lg p-3" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="password" class="font-sans font-medium text-sm">Password</label>
+                  <input type="password" id="password" class="border border-gray-200 rounded-lg p-3" />
+                </div>
+                <div class="flex flex-row gap-2 items-center">
+                  <i class="ph ph-info text-xs text-gray-500"></i>
+                  <p class="font-sans text-xs text-gray-500">Informasi ini digunakan untuk login selanjutnya</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 mt-10">
+              <h3 class="font-sans font-semibold text-2xl">Alamat Pengiriman</h3>
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <label for="name" class="font-sans font-medium text-sm">Nama Lengkap</label>
+                  <input type="text" id="name" class="border border-gray-200 rounded-lg p-3" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="phone" class="font-sans font-medium text-sm">Nomor Telepon</label>
+                  <input type="text" id="phone" class="border border-gray-200 rounded-lg p-3" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="address" class="font-sans font-medium text-sm">Alamat</label>
+                  <input type="text" id="address" class="border border-gray-200 rounded-lg p-3" />
+                  <p class="font-sans text-xs text-gray-500">Tulis informasi selengkapnya untuk menghindari kesalahan pengiriman</p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="province" class="font-sans font-medium text-sm">Provinsi</label>
+                  <select id="province" class="border border-gray-200 rounded-lg p-3">
+                    <option value="0">Pilih Provinsi</option>
+                    <option value="1">Jawa Barat</option>
+                    <option value="2">Jawa Tengah</option>
+                    <option value="3">Jawa Timur</option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="city" class="font-sans font-medium text-sm">Kabupaten/Kota</label>
+                  <select id="city" class="border border-gray-200 rounded-lg p-3">
+                    <option value="0">Pilih Kabupaten/Kota</option>
+                    <option value="1">Bandung</option>
+                    <option value="2">Bekasi</option>
+                    <option value="3">Bogor</option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="district" class="font-sans font-medium text-sm">Kecamatan</label>
+                  <select id="district" class="border border-gray-200 rounded-lg p-3">
+                    <option value="0">Pilih Kecamatan</option>
+                    <option value="1">Cibiru</option>
+                    <option value="2">Cimahi</option>
+                    <option value="3">Cimahi Utara</option>
+                  </select>
+                </div>
+                <a href="checkout.html" class="hidden md:flex bg-light-pink hover:bg-[#E05E65] text-white font-medium text-sm py-3 rounded-lg justify-center">Lanjutkan Pengiriman</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-5/12">
+            <div class="flex flex-row gap-4 w-full">
+              <img src="assets/images/product1.webp" alt="img" class="w-24 h-24 object-cover" />
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-3">
+                  <h5 class="font-sans font-medium">Serum Expert Acne</h5>
+                  <div class="flex flex-row justify-between items-center mt-3">
+                    <p class="font-sans text-xs text-gray-500">x1</p>
+                    <p class="font-sans font-semibold text-xs">Rp. 45.000</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 mt-3">
+                  <div class="flex flex-row justify-between items-center">
+                    <p class="font-sans text-xs text-gray-500">Subtotal</p>
+                    <p class="font-sans font-semibold text-xs">Rp. 45.000</p>
+                  </div>
+                  <div class="flex flex-row justify-between gap-3">
+                    <p class="font-sans text-xs text-gray-500">Pengiriman</p>
+                    <p class="font-sans font-semibold text-xs text-right">Dihitung ditahap selanjutnya</p>
+                  </div>
+                  <div class="border border-gray-200 w-full"></div>
+                  <div class="flex flex-row justify-between gap-3">
+                    <p class="font-sans text-xs text-gray-500">Total</p>
+                    <p class="font-sans font-semibold text-xs text-right">Rp. 45.000</p>
+                  </div>
+                  <div class="flex flex-row gap-2 items-center">
+                    <i class="ph ph-info text-xs text-gray-500"></i>
+                    <p class="font-sans text-xs text-gray-500">Belum termasuk ongkir</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end product -->
+
+    <!-- footer -->
+    <footer class="bg-dark-pink text-white py-10">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row gap-5 justify-between items-center">
+          <img src="assets/images/logo_white.webp" alt="logo" class="h-6 md:h-11 w-auto" />
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="flex flex-col gap-4">
+              <h5 class="text-white font-sans text-base">Contact Us:</h5>
+              <div class="flex flex-col gap-2">
+                <div class="flex flow-row gap-2 items-center">
+                  <i class="ph-fill ph-map-pin text-white"></i>
+                  <p class="text-white font-sans">Jakarta, Indonesia</p>
+                </div>
+                <div class="flex flow-row gap-2 items-center">
+                  <i class="ph-fill ph-clock text-white"></i>
+                  <p class="text-white font-sans">Hours: 09.00 - 21.00, Senin - Minggu</p>
+                </div>
+                <div class="flex flow-row gap-2 items-center">
+                  <i class="ph-fill ph-envelope text-white"></i>
+                  <p class="text-white font-sans">support@ardiras.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h5 class="text-white font-sans text-base">Follow Us:</h5>
+              <div class="flex flex-row gap-5">
+                <a href="#" class="text-white"><i class="ph-fill ph-globe-simple text-2xl md:text-4xl"></i></a>
+                <a href="#" class="text-white"><i class="ph-fill ph-facebook-logo text-2xl md:text-4xl"></i></a>
+                <a href="#" class="text-white"><i class="ph-fill ph-instagram-logo text-2xl md:text-4xl"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- copyright -->
+    <div class="flex bg-white font-sans text-[10px] md:text-base text-gray-500 text-center items-center justify-center py-3 md:py-6">Copyright © 2024 Ardira’s. All Rights Reserved.</div>
+    <!-- end copyright -->
+
+    <!-- Floating Botton -->
+    <div class="flex flex-col gap-4" style="position: fixed; bottom: 20px; right: 20px">
+      <a data-tooltip-target="tooltip-whatsapp" data-tooltip-placement="left" href="#" class="flex p-3 rounded-full w-fit bg-green-400"><i class="ph ph-whatsapp-logo text-2xl text-white"></i></a>
+      <div id="tooltip-whatsapp" role="tooltip" class="absolute z-10 invisible flex px-3 py-2 text-sm font-medium text-dark-primary w-fit bg-gray-100 rounded-lg shadow-sm opacity-0 tooltip text-nowrap">
+        24/7 Chat 👩‍⚕️🚑
+        <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+    </div>
+    <!-- End Floating -->
+
+    <!-- flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
