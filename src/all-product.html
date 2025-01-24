@@ -24,17 +24,12 @@
           <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="assets/images/logo.webp" class="h-8" alt="Logo" />
           </a>
-          <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart">
-              <i class="ph ph-shopping-cart text-2xl"></i>
-            </button>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-              </svg>
-            </button>
-          </div>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
@@ -65,138 +60,164 @@
             <span>Filter</span>
           </button>
         </div>
-        <h3 class="text-center font-sans text-2xl md:text-3xl text-gray-800 font-semibold mb-10">10 Produk</h3>
+        <h3 class="text-center font-sans text-2xl md:text-3xl text-gray-800 font-semibold mb-10">Semua Produk</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
-          <div class="flex flex-col gap-3 w-full">
+          <a href="detail-bundling1.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
             <div class="relative w-full">
-              <img src="assets/images/product1.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+              <img src="assets/images/bundling1.webp" alt="product" class="w-auto" />
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">42%</div>
             </div>
-            <a href="detail-product1.html" class="flex flex-col gap-2">
-              <h5 class="text-sm md:text-xl font-sans">Serum Expert Acne</h5>
-              <div class="flex flex-row justify-between items-center">
-                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
-                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Paket Brightening</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 419.000</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 724.900</p>
               </div>
-            </a>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
-            <div class="relative w-full">
-              <img src="assets/images/product2.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
             </div>
-            <a href="detail-product2.html" class="flex flex-col gap-2">
-              <h5 class="text-sm md:text-xl font-sans">Facial Wash Exclusive Acne</h5>
-              <div class="flex flex-row justify-between items-center">
-                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
-                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
-              </div>
-            </a>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
-            <div class="relative w-full">
-              <img src="assets/images/product3.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
-            </div>
-            <a href="detail-product3.html" class="flex flex-col gap-2">
-              <h5 class="text-sm md:text-xl font-sans">Cream Gel Eksklusif Acne</h5>
-              <div class="flex flex-row justify-between items-center">
-                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
-                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
-              </div>
-            </a>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
-            <div class="relative w-full">
-              <img src="assets/images/product4.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
-            </div>
-            <a href="detail-product4.html" class="flex flex-col gap-2">
-              <h5 class="text-sm md:text-xl font-sans">Sunscreen Eksklusif Acne</h5>
-              <div class="flex flex-row justify-between items-center">
-                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
-                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
-              </div>
-            </a>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
-            <div class="relative w-full">
-              <img src="assets/images/product5.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
-            </div>
-            <a href="detail-product5.html" class="flex flex-col gap-2">
-              <h5 class="text-sm md:text-xl font-sans">Toner Eksklusif Acne</h5>
-              <div class="flex flex-row justify-between items-center">
-                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
-                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
-              </div>
-            </a>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
-            <div class="relative w-full">
-              <img src="assets/images/product6.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
-            </div>
-            <a href="detail-product6.html" class="flex flex-col gap-2">
-              <h5 class="text-sm md:text-xl font-sans">Serum Eksklusif Brightening</h5>
-              <div class="flex flex-row justify-between items-center">
-                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
-                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
-              </div>
-            </a>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
-            <div class="relative w-full">
-              <img src="assets/images/product7.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
-            </div>
-            <a href="detail-product7.html" class="flex flex-col gap-2">
-              <h5 class="text-sm md:text-xl font-sans">Eksklusif Cream Brightening</h5>
-              <div class="flex flex-row justify-between items-center">
-                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
-                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
-              </div>
-            </a>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
-            <div class="relative w-full">
-              <img src="assets/images/product8.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
-            </div>
-            <a href="detail-product8.html" class="flex flex-col gap-2">
-              <h5 class="text-sm md:text-xl font-sans">Sunscreen Exclusive Brightening</h5>
-              <div class="flex flex-row justify-between items-center">
-                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
-                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
-              </div>
-            </a>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
+          </a>
+          <a href="detail-product9.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
             <div class="relative w-full">
               <img src="assets/images/product9.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">36%</div>
             </div>
-            <a href="detail-product9.html" class="flex flex-col gap-2">
-              <h5 class="text-sm md:text-xl font-sans">Facial Wash Exclusive Brightening</h5>
-              <div class="flex flex-row justify-between items-center">
-                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
-                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Facial Wash Brightening</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 89.000</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 139.900</p>
               </div>
-            </a>
-          </div>
-          <div class="flex flex-col gap-3 w-full">
+            </div>
+          </a>
+          <a href="detail-product10.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
             <div class="relative w-full">
               <img src="assets/images/product10.webp" alt="product" class="w-auto" />
-              <button type="button" class="flex absolute bottom-3 right-3 bg-white rounded-full text-lg p-2 w-fit hover:bg-light-pink hover:text-white duration-100" data-drawer-target="cart" data-drawer-show="cart" data-drawer-placement="right" aria-controls="cart"><i class="ph ph-basket p-0 m-0"></i></button>
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">39%</div>
             </div>
-            <a href="detail-product10.html" class="flex flex-col gap-2">
-              <h5 class="text-sm md:text-xl font-sans">Eksklusif Face Toner</h5>
-              <div class="flex flex-row justify-between items-center">
-                <p class="font-sans text-blue-800 font-semibold text-xs md:text-base">Rp. 45.000</p>
-                <p class="font-sans text-xs md:text-base decoration line-through text-gray-500">Rp. 50.000</p>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Toner Brightening</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 89.000</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 145.900</p>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
+          <a href="detail-product6.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
+            <div class="relative w-full">
+              <img src="assets/images/product6.webp" alt="product" class="w-auto" />
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">40%</div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Serum Brightening</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 99.999</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 165.900</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-product8.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
+            <div class="relative w-full">
+              <img src="assets/images/product8.webp" alt="product" class="w-auto" />
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">46%</div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Sunscreen Brightening</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 89.000</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 165.900</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-product7.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
+            <div class="relative w-full">
+              <img src="assets/images/product7.webp" alt="product" class="w-auto" />
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">24%</div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Cream Gel Brightening</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 119.000</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 155.900</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-bundling2.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
+            <div class="relative w-full">
+              <img src="assets/images/bundling2.webp" alt="product" class="w-auto" />
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">40%</div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Paket Acne</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 419.000</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 693.000</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-product2.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
+            <div class="relative w-full">
+              <img src="assets/images/product2.webp" alt="product" class="w-auto" />
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">37%</div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Facial Wash Acne</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 89.000</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 141.900</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-product5.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
+            <div class="relative w-full">
+              <img src="assets/images/product5.webp" alt="product" class="w-auto" />
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">35%</div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Toner Acne</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 89.000</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 137.500</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-product1.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
+            <div class="relative w-full">
+              <img src="assets/images/product1.webp" alt="product" class="w-auto" />
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">38%</div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Serum Acne</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 94.999</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 152.900</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-product4.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
+            <div class="relative w-full">
+              <img src="assets/images/product4.webp" alt="product" class="w-auto" />
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">42%</div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Sunscreen Acne</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 89.000</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 152.900</p>
+              </div>
+            </div>
+          </a>
+          <a href="detail-product3.html" class="flex flex-col gap-3 w-full p-3 hover:shadow-md transition-shadow duration-300 rounded-lg bg-white">
+            <div class="relative w-full">
+              <img src="assets/images/product3.webp" alt="product" class="w-auto" />
+              <div class="px-1.5 pb-3 pt-0.5 text-sm font-semibold text-white absolute top-0 right-2 bg-[url('assets/images/discount-badge.svg')] bg-no-repeat bg-contain">16%</div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h5 class="text-sm font-sans">Cream Gel Acne</h5>
+              <div class="flex flex-col gap-1">
+                <p class="font-sans text-light-pink font-semibold text-sm">Rp. 141.000</p>
+                <p class="font-sans text-sm decoration line-through text-gray-500">Rp. 199.000</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -278,13 +299,13 @@
                   </button>
                   <form class="max-w-xs w-fit mt-3">
                     <div class="relative flex items-center max-w-[8rem]">
-                      <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="bg-[#FEF0F1] rounded-s-lg p-3 h-11 focus:ring-gray-100 focus:ring-2 focus:outline-none">
+                      <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="bg-[#F2F8EA] rounded-s-lg p-3 h-11 focus:ring-gray-100 focus:ring-2 focus:outline-none">
                         <svg class="w-3 h-3 text-light-pink" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
                         </svg>
                       </button>
-                      <input type="text" id="quantity-input" data-input-counter aria-describedby="helper-text-explanation" class="bg-[#FEF0F1] h-11 text-center text-gray-900 text-sm block w-full py-2.5 border-none" placeholder="0" required />
-                      <button type="button" id="increment-button" data-input-counter-increment="quantity-input" class="bg-[#FEF0F1] rounded-e-lg p-3 h-11 focus:ring-gray-100 focus:ring-2 focus:outline-none">
+                      <input type="text" id="quantity-input" data-input-counter aria-describedby="helper-text-explanation" class="bg-[#F2F8EA] h-11 text-center text-gray-900 text-sm block w-full py-2.5 border-none" placeholder="0" required />
+                      <button type="button" id="increment-button" data-input-counter-increment="quantity-input" class="bg-[#F2F8EA] rounded-e-lg p-3 h-11 focus:ring-gray-100 focus:ring-2 focus:outline-none">
                         <svg class="w-3 h-3 text-light-pink" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
                         </svg>
